@@ -8,15 +8,20 @@ var respuestasIncorrectas= document.getElementById('respuestasIncorrectas');
 var nombreUsuario = prompt("Ingresa tu nombre:");
 saludarUsario.innerHTML = "😊 Bienvenid@ " + nombreUsuario + " 😊" ;
 
-var iniciarPartida = parseInt(prompt("Ingresa el número que corresponda a tu respuesta \n ¿Quieres iniciar la partida? \n 1.Si \n 2.No"));
+//var iniciarPartida = parseInt(prompt("Ingresa el número que corresponda a tu respuesta \n ¿Quieres iniciar la partida? \n 1.Si \n 2.No"));
 
 // Evaluamos las respuestas del usuario (para iniciar el juego)
 
 mostrarResultados.style.display = '';
-if (iniciarPartida == 2) {//CASO 1; EN EL QUE EL USUARIO NO QUIERA JUGAR
-  mostrarResultados.innerHTML =  "<h1>Gracias por visitarnos, nos vemos la próxima 😉 </h1>";
-} 
-else {//Caso en el que SI quiera continuar con el juego
+//if (iniciarPartida == 2) {//CASO 1; EN EL QUE EL USUARIO NO QUIERA JUGAR
+  function botonno(){
+
+     document.getElementById("despedida").innerHTML =  "Gracias por visitarnos, nos vemos la próxima 😉 ";
+  }
+
+//else {//Caso en el que SI quiera continuar con el juego
+  function botonsi(){
+
   respuestasCorrectas.innerHTML = "<h4> Preguntas correctas </h4>";
   respuestasIncorrectas.innerHTML = "<h4> Preguntas incorrectas </h4>";
 
@@ -37,4 +42,6 @@ else {//Caso en el que SI quiera continuar con el juego
   } else {
     respuestasIncorrectas.innerHTML += "<br> 2.¿Qué es lo que más le gusta hacer a Lulú? <br> <strong>Respuesta correcta:</strong> 🎤 Cantar 🎤";
   }
+ 
 }
+

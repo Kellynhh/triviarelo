@@ -7,3 +7,39 @@ body {
   min-height: 75px;
   width: 50%;
 }
+
+ /*caracteristica visual del boton*/
+ .boton{
+
+ 	border-radius:45px;
+    color:#070707;
+    padding: 14px 28px;
+    cursor: pointer;
+    content: center;
+    
+ }
+
+  /*esta clase estamos pintando el boton al igual que la clase que sigue que se denota ".no"*/
+ .si{
+
+ 	background-color: green;
+
+ }
+ /* el hover es para darle la sombra o efecto a los botones cuando el mouse este sobre ellos*/
+ .si:hover{
+
+  background: #13B70F;
+
+ }
+
+ .no{
+
+ 	background-color: red;
+
+ }
+
+ .no:hover{
+
+  background: #610606;
+
+ }

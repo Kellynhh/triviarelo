@@ -6,7 +6,7 @@
   <!-- link rel="stylesheet" href="css/style.css" -->
   <link rel="stylesheet" href="triviarelo.css">
 
-  <!--script src="triviarelo.js"></script>-->
+  <!--script src="triviarelo.js"></script> se hace el linkeo al final del body para que se ejecute-->
 
 </head>
 <body>
@@ -16,6 +16,10 @@
     <h3 id="bienvenida"> BIENVENID@ </h3><!-- Este elemento nos permite agregar el nombre del usuario -->
 
     <hr/>
+     <h3 id="pregunta"> Ingresa el número que corresponda a tu respuesta \n ¿Quieres iniciar la partida? \n 1.Si \n 2.No </h3>
+    <button class=" boton si" id="si" onclick="botonsi()"> SI</button>
+    <button class=" boton no" id="no" onclick="botonno()"> NO</button>  
+     <p id='despedida'></p>
   </header>
   <!-- RESULTADOS -->
   <section>
